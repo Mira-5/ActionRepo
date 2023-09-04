@@ -3,7 +3,7 @@ name: Python Script Workflow
 on:
   push:
     branches:
-      - main # Adjust this branch name to your needs
+      - master # Adjust this branch name to your needs
 
 jobs:
   run_python_script:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.x # Specify the Python version you need (e.g., 3.6, 3.7, 3.8)
+          python-version: 3.8 # Specify the Python version you need (e.g., 3.6, 3.7, 3.8)
 
       - name: Run Python script
         run: python main.py # Replace with the actual command to run your Python script
