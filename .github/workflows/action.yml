@@ -1,7 +1,7 @@
 name: Python Script Workflow
 
 on:
-  push:
+  pull_request:
     branches:
       - master # Adjust this branch name to your needs
 
@@ -19,5 +19,5 @@ jobs:
           python-version: 3.8 # Specify the Python version you need (e.g., 3.6, 3.7, 3.8)
 
       - name: Run Python script
-        run: python main.py # Replace with the actual command to run your Python script
+        run: python fix.py # Replace with the actual command to run your Python script
 
