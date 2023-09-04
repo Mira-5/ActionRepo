@@ -18,9 +18,6 @@ jobs:
         with:
           python-version: 3.x # Specify the Python version you need (e.g., 3.6, 3.7, 3.8)
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt # Replace with your requirements installation command
-
       - name: Run Python script
-        run: python your_script.py # Replace with the actual command to run your Python script
+        run: python main.py # Replace with the actual command to run your Python script
 
