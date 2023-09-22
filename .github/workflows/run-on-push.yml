@@ -16,7 +16,7 @@ jobs:
 
       - name: Run Python script
         id: run_test1
-        run: python3 test.py
+        run: python test.py
 
       - name: Upload Test Report
         if: always()
@@ -39,7 +39,7 @@ jobs:
 
       - name: Run Python script
         id: run_test2
-        run: python3 test2.py
+        run: python test2.py
 
       - name: Upload Test Report
         if: always()
